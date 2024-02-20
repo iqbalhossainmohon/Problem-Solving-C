@@ -1,6 +1,14 @@
 
 ///Write a C program to find sum of first and last digit of a number.
 
+/*
+Input:
+    Enter a number: 12334
+Output:
+    Sum of first and last digit: 5
+*/
+
+
 
 #include <stdio.h>
 
@@ -18,7 +26,7 @@ int main() {
 
     sum = first_digit + last_digit;
 
-    printf("Sum of first and last digit: %d\n", sum);
+    printf("Sum of first and last digit: %d, %d, %d\n", first_digit, last_digit, sum);
 
     return 0;
 }

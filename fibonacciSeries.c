@@ -18,7 +18,8 @@ int main() {
     printf("Enter the number of terms: ");
     scanf("%d", &n);
 
-    printf("Fibonacci Series up to %d terms:\n", n);
+    //printf("Fibonacci Series up to %d terms:\n", n);
+
 
     for (i = 0; i < n; i++) {
         if (i <= 1)
