@@ -13,19 +13,19 @@ Output :
 #include <stdio.h>
 
 int main() {
-    int num;
+    int number;
     int factorial = 1;
 
-    printf("Enter a positive integer: ");
-    scanf("%d", &num);
+    printf("Enter a positive number: ");
+    scanf("%d", & number);
 
-    if (num < 0)
+    if (number < 0)
         printf("Error! Factorial of a negative number doesn't exist.");
     else {
-        for (int i = 1; i <= num; ++i) {
-            factorial *= i;
+        for (int i = 1; i <= number; i++) {
+            factorial = factorial * i;
         }
-        printf("Factorial of %d = %llu", num, factorial);
+        printf("Factorial of %d = %d", number, factorial);
         return 0;
     }
 }
