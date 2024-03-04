@@ -8,12 +8,9 @@ main(){
         printf("EXCELLENT");
     }
     else if(num>=50){
-        printf("GOOD");
+        printf("GOOOOOOOOD");
     }
     else{
         printf("BAD");
     }
-
-
-
 }
