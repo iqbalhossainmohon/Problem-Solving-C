@@ -1,25 +1,28 @@
 #include <stdio.h>
 
 int main() {
-    int numbers[35], sum = 0;
-    int average;
+
+    int n;
+       printf("Enter number for student: ");
+       scanf("%d", & n);
+
+    int numbers[n];
+    int sum = 0;
+    int average, max_number, min_number;
     int above_average_count = 0;
     int below_average_count = 0;
-    int max_number;
-    int min_number;
 
-    //printf("Enter the numbers of students: ");
 
-    for (int i = 0; i < 35; i++) {
-        printf("Enter number for student %d: ", i+1 );
+    for (int i = 0; i < n; i++) {
+        printf("Enter number for student ID = %d: ", i+1 );
         scanf("%d", &numbers[i]);
         sum = sum + numbers[i];
     }
 
-    average = sum / 35;
+    average = sum / n;
 
     /// Counting the number of students above and below the mean marks
-    for (int i = 0; i < 35; i++) {
+    for (int i = 0; i < n; i++) {
         if (numbers[i] > average) {
             above_average_count++;
         } else if (numbers[i] < average) {
@@ -30,7 +33,7 @@ int main() {
     /// Finding the maximum and minimum numbers
     max_number = numbers[0];
     min_number = numbers[0];
-    for (int i = 1; i < 35; i++) {
+    for (int i = 1; i < n; i++) {
         if (numbers[i] > max_number) {
             max_number = numbers[i];
         }
