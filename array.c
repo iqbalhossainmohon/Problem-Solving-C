@@ -11,7 +11,6 @@ int main() {
     int average, max_number, min_number;
     int below_average_count = 0;
 
-
     for (int i = 0; i < n; i++) {
         printf("Enter the number for student ID = %d: ", i+1 );
         scanf("%d", &numbers[i]);
