@@ -3,18 +3,17 @@
 int main() {
 
     int n;
-       printf("Enter number for student: ");
+       printf("Enter number of student: ");
        scanf("%d", & n);
 
     int numbers[n];
-    int sum = 0;
+    int sum = 0, above_average_count = 0;
     int average, max_number, min_number;
-    int above_average_count = 0;
     int below_average_count = 0;
 
 
     for (int i = 0; i < n; i++) {
-        printf("Enter number for student ID = %d: ", i+1 );
+        printf("Enter the number for student ID = %d: ", i+1 );
         scanf("%d", &numbers[i]);
         sum = sum + numbers[i];
     }
@@ -43,8 +42,8 @@ int main() {
     }
 
     printf("Average number: %d\n", average);
-    printf("Number of students above average: %d\n", above_average_count);
-    printf("Number of students below average: %d\n", below_average_count);
+    printf("Number of students above average marks: %d\n", above_average_count);
+    printf("Number of students below average marks: %d\n", below_average_count);
     printf("Student with highest number: %d\n", max_number);
     printf("Student with lowest number: %d\n", min_number);
 
