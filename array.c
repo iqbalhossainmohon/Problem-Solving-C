@@ -19,7 +19,7 @@ int main() {
 
     average = sum / n;
 
-
+    // Counting the number of students above and below the mean marks
     for (int i = 0; i < n; i++) {
         if (numbers[i] > average) {
             above_average_count++;
@@ -28,7 +28,7 @@ int main() {
         }
     }
 
-
+    // Finding the maximum and minimum numbers
     max_number = numbers[0];
     min_number = numbers[0];
     for (int i = 1; i < n; i++) {
