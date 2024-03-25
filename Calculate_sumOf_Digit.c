@@ -1,3 +1,8 @@
+/*
+    Input: 1234
+        1+2+3+4=10
+    Output: 10
+*/
 
 #include <stdio.h>
 
