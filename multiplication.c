@@ -4,13 +4,13 @@
 #include <stdio.h>
 
 int main() {
-    int j, n;
+    int i, n;
 
     printf("Input the multiplication of number: ");
     scanf("%d", &n);
     printf("\n");
 
-    for (j = 1; j <= 10; j++) {
-        printf("%d X %d = %d \n", n, j, n * j);
+    for (i = 1; i <= 10; i++) {
+        printf("%d X %d = %d \n", n, i, n * i);
     }
 }
