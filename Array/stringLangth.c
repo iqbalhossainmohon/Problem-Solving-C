@@ -1,10 +1,13 @@
 #include <stdio.h>
 
 int main() {
-    char str[] = "Hello, world!";
+    //char str[] = "Hello, world!";
+    //int length = 0;
+
+    char str[100];
+    gets(str);
     int length = 0;
 
-    // Iterate through the string until reaching the null terminator
     while (str[length] != '\0') {
         length++;
     }
