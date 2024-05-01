@@ -1,3 +1,10 @@
+
+/// 2. write a C program to add two numbers using pointers.
+/// 3. write a C program to input and print array elements using pointers.
+
+/// 4. write a C program to swap two number using pointers.
+
+
 #include <stdio.h>
 
 int main() {
@@ -17,3 +24,4 @@ int main() {
     printf("After swapping: num1 = %d, num2 = %d\n", num1, num2);
 
 }
+
